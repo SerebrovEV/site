@@ -1,3 +1,53 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
 /* roboto-regular - cyrillic */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -35,4 +85,42 @@ html{
 }
 *, *::before, *::after{
     box-sizing: inherit;
+}
+body{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background: #002C64;
+}
+.wrapper{
+    max-width: 1164px;
+    margin: 0 auto;
+}
+.header{
+    background: linear-gradient(180deg, #001C3F 0%, #002C64 100%);
+}
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap; /* расположение контента*/
+    align-items: center; /*выравнивание по горизонтали*/
+    justify-content:space-between; /* выравнивание по краям*/
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_item{
+    margin-right: 57px;
+}
+.header_item:last-child{
+    margin-right: 0;
+}
+.header_link{
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-decoration-line: none;
 }
