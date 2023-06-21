@@ -23,25 +23,31 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -56,6 +62,7 @@ table {
     font-weight: 400;
     src: url('../fonts/roboto-v30-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* roboto-500 - cyrillic */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -64,6 +71,7 @@ table {
     font-weight: 500;
     src: url('../fonts/roboto-v30-cyrillic-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* roboto-700 - cyrillic */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -72,6 +80,7 @@ table {
     font-weight: 700;
     src: url('../fonts/roboto-v30-cyrillic-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* roboto-900 - cyrillic */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -80,13 +89,16 @@ table {
     font-weight: 900;
     src: url('../fonts/roboto-v30-cyrillic-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-html{
+
+html {
     box-sizing: border-box;
 }
-*, *::before, *::after{
+
+*, *::before, *::after {
     box-sizing: inherit;
 }
-body{
+
+body {
     font-family: 'Roboto', serif;
     font-style: normal;
     font-size: 20px;
@@ -95,32 +107,95 @@ body{
     color: #FFFFFF;
     background: #002C64;
 }
-.wrapper{
+
+.wrapper {
     max-width: 1164px;
     margin: 0 auto;
 }
-.header{
+
+/* Header styles start*/
+.header {
     background: linear-gradient(180deg, #001C3F 0%, #002C64 100%);
+    /*position: fixed; !* закрепление для скрола хеддера*!*/
+    top: 0;
+    left: 0;
+    width: 100%;
 }
-.header_wrapper{
+
+.header_wrapper {
     display: flex;
     flex-wrap: wrap; /* расположение контента*/
     align-items: center; /*выравнивание по горизонтали*/
-    justify-content:space-between; /* выравнивание по краям*/
+    justify-content: space-between; /* выравнивание по краям*/
+    padding-top: 15px;
 }
-.header_list{
+
+.header_list {
     display: flex;
     flex-wrap: wrap;
 }
-.header_item{
+
+.header_item {
     margin-right: 57px;
 }
-.header_item:last-child{
+
+.header_item:last-child {
     margin-right: 0;
 }
-.header_link{
+
+.header_link {
     font-size: 20px;
     line-height: 23px;
     color: #FFFFFF;
     text-decoration-line: none;
 }
+
+.header_link:hover, .header_link:focus, .header_link:active {
+    color: #E23535;
+    /*  opacity: 0.75;*/
+}
+
+/* Header styles end*/
+
+/* Intro styles start*/
+.intro {
+    height: 100vh;
+    /*padding-top: 150px;*/
+}
+
+.intro_wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.intro_text {
+    padding-top: 150px;
+    background: linear-gradient(90deg, #002C64 53.07%, rgba(0, 44, 100, 0) 96.42%);
+    position: absolute;
+}
+
+
+.intro_pic {
+    position: revert;
+}
+
+.intro_title {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 50px;
+    max-width: 645px;
+    margin-bottom: 42px;
+
+}
+
+.intro_subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 470px;
+    margin-bottom: 114px;
+}
+
+/* Intro styles end*/
