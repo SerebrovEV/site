@@ -160,6 +160,7 @@ body {
 /* Intro styles start*/
 .intro {
     height: 100vh;
+    margin-bottom: 300px;
     /*padding-top: 150px;*/
 }
 
@@ -178,6 +179,7 @@ body {
 
 .intro_pic {
     position: revert;
+
 }
 
 .intro_title {
@@ -197,5 +199,46 @@ body {
     max-width: 470px;
     margin-bottom: 114px;
 }
+.intro_submit{
+    background-color: #E23535;
+    width: 380px;
+    height: 50px;
+    gap: 10px;
+    margin-bottom: 300px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+}
 
 /* Intro styles end*/
+
+/* Count styles start*/
+.count_wrapper {
+    display: grid;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.count_title {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+.count_subtitle {
+    display: grid;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 50px;
+    margin-bottom: 42px;
+    justify-content:center;
+}
+.send-form_info{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* Count styles end*/
