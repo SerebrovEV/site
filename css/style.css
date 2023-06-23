@@ -212,6 +212,61 @@ body {
 
 /* Intro styles end*/
 
+/* About styles start*/
+.about_title{
+    color: #00A5FE;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 150px;
+}
+.about_subtitle{
+  display: flex;
+    justify-items: center;
+}
+.about_pic{
+    display: grid;
+    margin-bottom: 180px;
+    justify-items: right;
+    margin-right: 50px;
+}
+.about_text{
+
+}
+.about_subtitle_text{
+    margin-bottom: 75px;
+}
+.about_line{
+    margin-bottom: 75px;
+}
+/* About styles end*/
+
+/* Service styles start*/
+.service_wrapper{
+    display: grid;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+.service_title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 50px;
+    max-width: 878px;
+    text-align: center;
+
+}
+.service_title2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 150px;
+    max-width: 878px;
+    text-align: center;
+
+}
+/* Service styles end*/
+
 /* Count styles start*/
 .count_wrapper {
     display: grid;
@@ -225,6 +280,7 @@ body {
     font-size: 32px;
     line-height: 50px;
     margin-bottom: 30px;
+
 }
 
 .count_subtitle {
@@ -240,5 +296,7 @@ body {
     flex-wrap: wrap;
 
 }
-
+.send-form_field{
+    background-color: transparent;
+}
 /* Count styles end*/
