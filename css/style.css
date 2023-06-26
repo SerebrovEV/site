@@ -121,6 +121,9 @@ body {
     left: 0;
     width: 100%;
 }
+.header_logo-pic{
+    width: 170px;
+}
 
 .header_wrapper {
     display: flex;
@@ -242,7 +245,7 @@ body {
 /* About styles end*/
 
 /* Service styles start*/
-.service_wrapper{
+.service_title_wrapper{
     display: grid;
     justify-items: center;
     margin-bottom: 20px;
