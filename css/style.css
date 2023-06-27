@@ -121,7 +121,8 @@ body {
     left: 0;
     width: 100%;
 }
-.header_logo-pic{
+
+.header_logo-pic {
     width: 170px;
 }
 
@@ -202,7 +203,8 @@ body {
     max-width: 470px;
     margin-bottom: 114px;
 }
-.intro_submit{
+
+.intro_submit {
     background-color: #E23535;
     width: 380px;
     height: 50px;
@@ -216,41 +218,59 @@ body {
 /* Intro styles end*/
 
 /* About styles start*/
-.about_title{
+.about_title {
     color: #00A5FE;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 150px;
 }
-.about_subtitle{
-  display: flex;
+
+.about_subtitle {
+    display: flex;
     justify-items: center;
 }
-.about_pic{
+
+.about_pic {
     display: grid;
     margin-bottom: 180px;
     justify-items: right;
     margin-right: 50px;
 }
-.about_text{
+.about_pic:last-child{
+    margin-bottom: 300px;
+}
+
+.about_text {
 
 }
-.about_subtitle_text{
+
+.about_subtitle_text {
     margin-bottom: 75px;
 }
-.about_line{
+
+.about_line {
     margin-bottom: 75px;
 }
+
+.about_submit {
+    width: 326px;
+    height: 49px;
+    color: #FFFFFF;
+    background-color: #E23535;
+    margin-bottom:300px;
+}
+
 /* About styles end*/
 
 /* Service styles start*/
-.service_title_wrapper{
+.service_title_wrapper {
     display: grid;
     justify-items: center;
     margin-bottom: 20px;
 }
-.service_title{
+
+.service_title {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 32px;
@@ -259,16 +279,58 @@ body {
     text-align: center;
 
 }
-.service_title2{
+
+.service_title2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 50px;
+    max-width: 878px;
+    text-align: center;
+}
+.service_line {
+    margin-bottom: 50px;
+}
+.service_railways{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    /*margin-bottom: 50px;*/
+    max-width: 326px;
+
+}
+.service_svyaz{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    /*margin-bottom: 50px;*/
+    max-width: 326px;
+}
+.service_scb{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    /*margin-bottom: 50px;*/
+    max-width: 326px;
+}
+/* Service styles end*/
+
+/* Project styles start*/
+.project_title{
+    color: #00A5FE;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 150px;
-    max-width: 878px;
-    text-align: center;
-
 }
-/* Service styles end*/
+.check_submit {
+    width: 57px;
+    height: 57px;
+    color: #FFFFFF;
+    background-color: #E23535;
+}
+
+/* Project styles end*/
 
 /* Count styles start*/
 .count_wrapper {
@@ -292,14 +354,24 @@ body {
     font-size: 14px;
     line-height: 50px;
     margin-bottom: 42px;
-    justify-content:center;
+    justify-content: center;
 }
-.send-form_info{
+
+.send-form_info {
     display: flex;
     flex-wrap: wrap;
 
 }
-.send-form_field{
+
+.send-form_field {
     background-color: transparent;
 }
+
+.send-form_submit {
+    width: 200px;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: #E23535;
+}
+
 /* Count styles end*/
