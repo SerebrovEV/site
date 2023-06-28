@@ -259,6 +259,7 @@ body {
     color: #FFFFFF;
     background-color: #E23535;
     margin-bottom:300px;
+    margin-left: 60px;
 }
 
 /* About styles end*/
@@ -291,11 +292,20 @@ body {
 .service_line {
     margin-bottom: 50px;
 }
+.service_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.service_wrapper_section{
+    display: grid;
+    margin-left: 60px;
+}
 .service_railways{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-    /*margin-bottom: 50px;*/
+    margin-bottom: 50px;
     max-width: 326px;
 
 }
@@ -303,14 +313,14 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-    /*margin-bottom: 50px;*/
+    margin-bottom: 50px;
     max-width: 326px;
 }
 .service_scb{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-    /*margin-bottom: 50px;*/
+    margin-bottom: 50px;
     max-width: 326px;
 }
 /* Service styles end*/
