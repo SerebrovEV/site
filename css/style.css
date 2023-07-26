@@ -108,6 +108,11 @@ body {
     background: #002C64;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .wrapper {
     max-width: 1164px;
     margin: 0 auto;
@@ -163,7 +168,7 @@ body {
 
 /* Intro styles start*/
 .intro {
-    height: 100vh;
+    min-height: 100vh;
     margin-bottom: 300px;
     /*padding-top: 150px;*/
 }
@@ -215,6 +220,10 @@ body {
     font-size: 20px;
 }
 
+.intro_submit:hover, intro_submit:focus, intro_submit:active {
+    background: #610202;
+}
+
 /* Intro styles end*/
 
 /* About styles start*/
@@ -237,7 +246,8 @@ body {
     justify-items: right;
     margin-right: 50px;
 }
-.about_pic:last-child{
+
+.about_pic:last-child {
     margin-bottom: 300px;
 }
 
@@ -258,8 +268,12 @@ body {
     height: 49px;
     color: #FFFFFF;
     background-color: #E23535;
-    margin-bottom:300px;
+    margin-bottom: 300px;
     margin-left: 60px;
+}
+
+.about_submit:hover, about_submit:focus, about_submit:active {
+    background: #610202;
 }
 
 /* About styles end*/
@@ -289,19 +303,23 @@ body {
     max-width: 878px;
     text-align: center;
 }
+
 .service_line {
     margin-bottom: 50px;
 }
-.service_wrapper{
+
+.service_wrapper {
     display: flex;
     flex-wrap: wrap;
 
 }
-.service_wrapper_section{
+
+.service_wrapper_section {
     display: grid;
     margin-left: 60px;
 }
-.service_railways{
+
+.service_railways {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
@@ -309,35 +327,43 @@ body {
     max-width: 326px;
 
 }
-.service_svyaz{
+
+.service_svyaz {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 50px;
     max-width: 326px;
 }
-.service_scb{
+
+.service_scb {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 50px;
     max-width: 326px;
 }
+
 /* Service styles end*/
 
 /* Project styles start*/
-.project_title{
+.project_title {
     color: #00A5FE;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 150px;
 }
+
 .check_submit {
     width: 57px;
     height: 57px;
     color: #FFFFFF;
     background-color: #E23535;
+}
+
+.check_submit:hover, check_submit:focus, check_submit:active {
+    background: #610202;
 }
 
 /* Project styles end*/
@@ -367,21 +393,71 @@ body {
     justify-content: center;
 }
 
+/*/!!!!! правильное расположение/*/
 .send-form_info {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
 
 }
 
 .send-form_field {
     background-color: transparent;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.send-form_field::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
 }
 
 .send-form_submit {
     width: 200px;
     height: 50px;
     color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
     background-color: #E23535;
+    padding: 13px 42px;
+    border: 0;
+}
+
+.send-form_submit:hover, send-form_submit:focus, send-form_submit:active {
+    background: #610202;
 }
 
 /* Count styles end*/
+
+/* Footer styles start */
+
+.footer {
+    padding: 100px;
+}
+
+.footer_item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_logo-pic {
+    width: 150px;
+    padding-right: 50px;
+}
+
+.footer_nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.footer_menu-item {
+    weight: 500;
+    size: 20px;
+}
+
+/* Footer styles end */
