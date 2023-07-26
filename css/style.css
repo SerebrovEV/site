@@ -461,3 +461,28 @@ img {
 }
 
 /* Footer styles end */
+
+.warning {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    width: 937px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #E23535;
+}
+
+.warning--active {
+    display: flex;
+}
+
+.warning__text {
+    margin-right: 30px;
+}
+
+.warning__read {
+    display: block;
+    margin-left: 15px;
+}
