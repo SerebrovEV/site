@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!--Header start-->
+
 <header class="header">
     <div class="wrapper">
 
@@ -22,19 +24,19 @@
             <nav class="header_nav">
                 <ul class="header_list">
                     <li class="header_item">
-                        <a href="#1" class="header_link">ГЛАВНАЯ</a>
+                        <a href="#main" class="header_link js-scroll">ГЛАВНАЯ</a>
                     </li>
                     <li class="header_item">
-                        <a href="#1" class="header_link">О КОМПАНИИ</a>
+                        <a href="#about" class="header_link js-scroll">О КОМПАНИИ</a>
                     </li>
                     <li class="header_item">
-                        <a href="#1" class="header_link">ДЕЯТЕЛЬНОСТЬ</a>
+                        <a href="#service" class="header_link js-scroll">ДЕЯТЕЛЬНОСТЬ</a>
                     </li>
                     <li class="header_item">
-                        <a href="#1" class="header_link">ПРОЕКТЫ</a>
+                        <a href="#project" class="header_link js-scroll">ПРОЕКТЫ</a>
                     </li>
                     <li class="header_item">
-                        <a href="#1" class="header_link">КОНТАКТЫ</a>
+                        <a href="#contact" class="header_link js-scroll">КОНТАКТЫ</a>
                     </li>
                 </ul>
             </nav>
@@ -42,8 +44,14 @@
 
     </div>
 </header>
+
+<!--Header finish-->
+
 <main class="main">
-    <section class="intro">
+
+    <!--    Main start-->
+
+    <section class="intro" id="main">
         <div class="wrapper">
             <div class="intro_wrapper">
                 <div class="intro_text">
@@ -59,17 +67,21 @@
                         прохождение
                         экспертиз разного уровня.
                     </p>
-                    <button type="submit" class="intro_submit">Рассчитать стоимость</button>
+                    <form action="#count">
+                        <button type="submit" class="intro_submit">Рассчитать стоимость</button>
+                    </form>
                 </div>
-
             </div>
             <div class="image_intro">
                 <img src="./img/svg/back_intro.svg" alt="" class="intro_pic">
             </div>
         </div>
-
     </section>
-    <section class="about">
+
+    <!--    Main finish-->
+
+    <!--    About star-->
+    <section class="about" id="about">
         <div class="wrapper">
             <div class="about_wrapper">
                 <h2 class="about_title">
@@ -102,7 +114,12 @@
             </div>
         </div>
     </section>
-    <section class="service">
+
+    <!--    About finish-->
+
+    <!--    Service start-->
+
+    <section class="service" id="service">
         <div class="wrapper">
             <img src="./img/svg/Vector%205.svg" alt="" class="service_line">
             <div class="service_title_wrapper">
@@ -114,11 +131,12 @@
                 </h2>
             </div>
             <img src="./img/svg/Vector%205.svg" alt="" class="service_line">
-            <div class="service_wrapper">
+            <div class="service_wrapper_info">
                 <div class="service_wrapper_section">
                     <img src="img/svg/railways.svg" alt="" class="railways">
                     <h3 class="service_railways">
-                        Проектирование путевой части для железнодорожных станций, узлов и их реконструкция, путей общего
+                        Проектирование путевой части для железнодорожных станций,
+                        узлов и их реконструкция, путей общего
                         и необщего пользования
                     </h3>
                 </div>
@@ -127,7 +145,6 @@
                     <h3 class="service_svyaz">
                         Проектирование сетей железнодорожной связи
                     </h3>
-
                 </div>
                 <div class="service_wrapper_section">
                     <img src="img/svg/scb.svg" alt="" class="railways">
@@ -135,13 +152,20 @@
                         Проектирование Устройств Сигнализации, Централизации И Блокировки (СЦБ)
                     </h3>
                 </div>
-                <button type="submit" class="about_submit">Подробнее</button>
-                <button type="submit" class="about_submit">Подробнее</button>
-                <button type="submit" class="about_submit">Подробнее</button>
+            </div>
+            <div class="service_wrapper_button">
+                <button type="submit" class="service_submit">Подробнее</button>
+                <button type="submit" class="service_submit">Подробнее</button>
+                <button type="submit" class="service_submit">Подробнее</button>
             </div>
         </div>
     </section>
-    <section class="project">
+
+    <!--    Service end-->
+
+    <!--    Project start-->
+
+    <section class="project" id="project">
         <div class="wrapper">
             <div class="project_title_wrapper">
                 <h2 class="project_title">
@@ -155,7 +179,12 @@
             </div>
         </div>
     </section>
-    <section class="count">
+
+    <!--    Project end-->
+
+    <!--    Count start-->
+
+    <section class="count" id="count">
         <div class="wrapper">
             <div class="count_wrapper">
                 <h1 class="count_title">
@@ -179,6 +208,43 @@
             <button type="submit" class="send-form_submit">Отправить</button>
         </div>
     </section>
+
+    <!--    Count end-->
+
+    <!--    Contact start-->
+
+    <section class="contact" id="contact">
+        <div class="wrapper">
+            <img src="./img/svg/Vector%205.svg" alt="" class="service_line">
+            <div class="service_title_wrapper">
+                <h2 class="service_title">
+                    Мы выполняем весь комплекс работ
+                </h2>
+                <h2 class="service_title2">
+                    по проектированию:
+                </h2>
+            </div>
+            <img src="./img/svg/Vector%205.svg" alt="" class="service_line">
+            <div class="service_wrapper_info">
+                <div class="service_wrapper_section">
+                    <img src="img/svg/railways.svg" alt="" class="railways">
+                    <h3 class="service_railways">
+                        Проектирование путевой части для железнодорожных станций, узлов и их реконструкция, путей общего
+                        и необщего пользования
+                    </h3>
+                </div>
+                <div class="service_wrapper_section">
+                    <img src="img/svg/svyaz.svg" alt="" class="railways">
+                    <h3 class="service_svyaz">
+                        Проектирование сетей железнодорожной связи
+                    </h3>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    Contact end-->
 </main>
 <footer class="footer">
     <div class="wrapper">
@@ -212,7 +278,7 @@
                 </ul>
                 <ul class="footer_menu">
                     <li class="footer_menu-item2">
-                        +7(812) 957-78-94
+                        +7(812) 998-90-34
                     </li>
                     <li class="footer_menu-item2">
                         proekt@etppro.ru
@@ -233,7 +299,7 @@
 <!--    <p>Для улучшения работы сайта и его взаимодействия с пользователями мы используем файлы cookie. Продолжая работу с сайтом, Вы разрешаете использование cookie-файлов. Вы всегда можете отключить файлы cookie в настройках Вашего браузера.</p>-->
 <!--    <button class="button cookie_accept">Принять</button>-->
 <!--</div>-->
-<script src="scripts/script.js"></script>
+<script src="js/main.js"></script>
 </body>
 <!--<div id="cookie_notification">-->
 <!--    <div class="warning__text">Мы используем cookies! Продолжая пользоваться сайтом,-->
