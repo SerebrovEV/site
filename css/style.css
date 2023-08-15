@@ -441,6 +441,7 @@ img {
     background-color: #E23535;
     padding: 13px 42px;
     border: 0;
+    margin-bottom: 200px;
 }
 
 .send-form_submit:hover, send-form_submit:focus, send-form_submit:active {
