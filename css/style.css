@@ -452,6 +452,14 @@ img {
 
 /*Contact style start*/
 
+.contact_title {
+    color: #00A5FE;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 70px;
+}
+
 
 
 /*Contact style end*/
