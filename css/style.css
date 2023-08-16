@@ -121,13 +121,13 @@ img {
 
 /* Header styles start*/
 .header {
-    background: linear-gradient(180deg, #001C3F 0%, #002C64 100%);
+    background: linear-gradient(rgba(0, 28, 63, 1), rgba(0, 44, 100, 1));
     position: fixed; /* закрепление для скрола хеддера*/
     top: 0;
     left: 0;
     width: 100%;
     transition: .2s linear;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
     z-index: 999;
 }
 
@@ -136,7 +136,7 @@ img {
 }
 
 .header_logo-pic {
-    width: 170px;
+    width: 130px;
 }
 
 .header_wrapper {
@@ -188,7 +188,7 @@ img {
 }
 
 .intro_text {
-    padding-top: 150px;
+    padding-top: 200px;
     background: linear-gradient(90deg, #002C64 53.07%, rgba(0, 44, 100, 0) 96.42%);
     position: absolute;
 }
@@ -214,7 +214,7 @@ img {
     font-size: 20px;
     line-height: 25px;
     max-width: 470px;
-    margin-bottom: 114px;
+    margin-bottom: 70px;
 }
 
 .intro_submit {
@@ -222,7 +222,7 @@ img {
     width: 380px;
     height: 50px;
     gap: 10px;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 20px;
@@ -235,12 +235,17 @@ img {
 /* Intro styles end*/
 
 /* About styles start*/
+.about_wrapper {
+    display: flex;
+}
+
 .about_title {
     color: #00A5FE;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 150px;
+
 }
 
 .about_subtitle {
@@ -284,7 +289,7 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 32px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     max-width: 878px;
     text-align: center;
 
@@ -294,13 +299,13 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 32px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     max-width: 878px;
     text-align: center;
 }
 
 .service_line {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .service_wrapper_info {
@@ -323,10 +328,9 @@ img {
 }
 
 .service_railways {
-    text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     max-width: 326px;
 }
 
@@ -350,14 +354,109 @@ img {
 .service_submit {
     width: 320px;
     height: 49px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
     color: #FFFFFF;
     background-color: #E23535;
-    /*margin-bottom: 300px;*/
-    /*margin-left: 60px;*/
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
 }
 
 .service_submit:hover, about_submit:focus, about_submit:active {
     background: #610202;
+}
+
+/* The actual popup (appears on top) */
+.service_submit .zdtext {
+    text-transform: none;
+    visibility: hidden;
+    font-size: 18px;
+    font-weight: 100;
+    width: 1300px;
+    background-color: rgba(0, 25, 59, 1);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: -10%;
+}
+
+.service_submit .svyaztext {
+    text-transform: none;
+    visibility: hidden;
+    font-size: 18px;
+    font-weight: 100;
+    width: 1300px;
+    background-color: rgba(0, 25, 59, 1);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: -140%;
+}
+
+.service_submit .scbztext {
+    text-transform: none;
+    visibility: hidden;
+    font-size: 18px;
+    font-weight: 100;
+    width: 1300px;
+    background-color: rgba(0, 25, 59, 1);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: -280%;
+}
+
+/*!* Popup arrow *!*/
+/*.service_submit .svyaztext::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 100%;*/
+/*    left: 50%;*/
+/*    margin-left: -5px;*/
+/*    border-width: 5px;*/
+/*    border-style: solid;*/
+/*    border-color: #555 transparent transparent transparent;*/
+/*}*/
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.service_submit .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Service styles end*/
@@ -385,6 +484,10 @@ img {
 /* Project styles end*/
 
 /* Count styles start*/
+.count {
+    margin-bottom: 50px;
+}
+
 .count_wrapper {
     display: grid;
     justify-content: center;
@@ -460,7 +563,50 @@ img {
     margin-bottom: 70px;
 }
 
+.contact_wrapper_info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
 
+.contact_wrapper_section {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_question {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 100px;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact_info_text {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone {
+    width: 47px;
+    height: 47px;
+}
+
+.mail {
+    width: 47px;
+    height: 47px;
+}
 
 /*Contact style end*/
 
@@ -468,11 +614,11 @@ img {
 
 .footer {
     padding: 100px;
+    background: linear-gradient(rgba(0, 28, 63, 1), rgba(0, 44, 100, 1));
 }
 
 .footer_item {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .footer_logo-pic {
