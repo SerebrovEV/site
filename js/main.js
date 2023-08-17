@@ -6,7 +6,7 @@
         }
     };
 }());
-// Scroll to anchors
+// Scroll to header
 (function () {
 
     const smoothScroll = function (targetEl, duration) {

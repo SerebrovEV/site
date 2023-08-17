@@ -634,8 +634,39 @@ img {
 }
 
 .footer_menu-item {
-    weight: 500;
-    size: 20px;
+    /*width: 500px;*/
+    /*size: 20px;*/
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.footer_menu-item2 {
+    /*wight: 700;*/
+    /*size: 20px;*/
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.footer_menu-item3 {
+    /*wight: 700;*/
+    /*size: 20px;*/
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.footer_menu-link{
+    color:#FFFFFF;
+    text-decoration-line: none;
+
+}
+
+.footer_menu-link:hover, .footer_menu-link:focus, .footer_menu-link:active {
+    color: #E23535;
+    text-decoration-line: none;
 }
 
 /* Footer styles end */
