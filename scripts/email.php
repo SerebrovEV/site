@@ -1,5 +1,5 @@
 <?php
-  $to = "89818121788@mail.ru";//Почтовый ящик на который будет отправлено сообщение
+  $to = "proekt@etppro.ru";//Почтовый ящик на который будет отправлено сообщение
   $subject = "Тема сообщения";//Тема сообщения
   $message = "Message, сообщение!";//Сообщение, письмо
   $headers = "Content-type: text/plain; charset=utf-8 \r\n";
@@ -18,6 +18,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			$number=trim(strip_tags($_POST['phone']));
 		}
 
+        if(isset($_POST['mail']))
+		{
+			$mail=trim(strip_tags($_POST['mail']));
+		}
+
 		if (isset( $_POST['type'])) {
         	$type=trim(strip_tags($_POST['type']));
         }
@@ -27,22 +32,24 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		}
 
 			// Формируем письмо
-			$message = "Заявка на расчет";
-				$message  .= "Телефон: ".$number;
-				$message  .= "\n";
+			$message = "Заявка на расчет: \n";
 				$message  .= "Имя: ".$name;
 				$message  .= "\n";
+				$message  .= "Телефон: ".$number;
+				$message  .= "\n";
+				$message  .= "Почта: ".$mail;
+                $message  .= "\n";
 				$message  .= "Тип работ: ".$type;
                 $message  .= "<\n>";
 				$message  .= "Подробнее: ".$question;
-				$message  .= "<\n>";
 			// Окончание формирования тела письма
 
 			// Посылаем письмо
 			$send = mail ($to, $subject, $message, $headers);
 
 			if ($send) //проверяем, отправилось ли сообщение
-            		echo "Сообщение отправлено успешно! Перейти на <a href='https://etp-pro.ru</a>, если вас не перенаправило вручную.";
+            		echo "Сообщение отправлено успешно!
+            		Перейти на сайт <a href='https://etp-pro.ru/'>ЭкспертТрансПроект</a>, если вас не перенаправило вручную.";
             	else
             		echo "Ошибка, сообщение не отправлено! Возможно, проблемы на сервере";
 }

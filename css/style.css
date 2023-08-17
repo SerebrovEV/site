@@ -507,7 +507,7 @@ img {
 .count_subtitle {
     display: grid;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 50px;
     margin-bottom: 42px;
     justify-content: center;
@@ -516,7 +516,7 @@ img {
 /*/!!!!! правильное расположение/*/
 .send-form_info {
     display: grid;
-
+position: center;
 }
 
 .send-form_field {
@@ -526,6 +526,11 @@ img {
     font-size: 18px;
     font-weight: 400;
     color: #FFFFFF;
+
+}
+
+.send-form{
+
 }
 
 .send-form_field::placeholder {
@@ -534,7 +539,12 @@ img {
     color: #FFFFFF;
 }
 
-.send-form_submit {
+.send-form_wrapper{
+    margin-bottom: 100px;
+}
+
+.bot-send-mail {
+    position: center;
     width: 200px;
     height: 50px;
     color: #FFFFFF;
@@ -547,7 +557,7 @@ img {
     margin-bottom: 200px;
 }
 
-.send-form_submit:hover, send-form_submit:focus, send-form_submit:active {
+.bot-send-mail:hover, .bot-send-mail:focus, .bot-send-mail:active {
     background: #610202;
 }
 
@@ -633,6 +643,13 @@ img {
     justify-content: space-around;
     width: 80%;
 }
+.footer_menu{
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration-line: none;
+}
 
 .footer_menu-item {
     font-weight: 500;
@@ -646,19 +663,18 @@ img {
     font-weight: 700;
     font-size: 20px;
     color: #FFFFFF;
+    text-transform: none;
     margin-bottom: 10px;
 }
 .footer_menu-item3 {
     font-weight: 500;
     font-size: 12px;
     color: #FFFFFF;
+    text-transform: none;
     margin-bottom: 10px;
 }
 
 .footer_menu-link, .footer_menu-link:visited{
-    font-weight: 500;
-    font-size: 20px;
-    text-transform: uppercase;
     color: #FFFFFF;
     text-decoration-line: none;
 
@@ -666,7 +682,6 @@ img {
 
 .footer_menu-link:hover, .footer_menu-link:focus, .footer_menu-link:active {
     color: #E23535;
-    text-decoration-line: none;
 }
 
 /* Footer styles end */
