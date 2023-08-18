@@ -172,6 +172,21 @@ img {
     /*  opacity: 0.75;*/
 }
 
+.header_burger {
+    width: 40px;
+    height: 20px;
+    position: relative;
+}
+
+.burger_line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+}
+
 /* Header styles end*/
 
 /* Intro styles start*/
@@ -383,8 +398,8 @@ img {
     padding: 10px 10px;
     position: absolute;
     z-index: 1;
-    bottom: 125%;
-    left: -10%;
+    bottom: -250%;
+    left: -20%;
 }
 
 .service_submit .svyaztext {
@@ -400,7 +415,7 @@ img {
     padding: 10px 10px;
     position: absolute;
     z-index: 1;
-    bottom: 125%;
+    bottom: -3250%;
     left: -140%;
 }
 
@@ -417,8 +432,8 @@ img {
     padding: 10px 10px;
     position: absolute;
     z-index: 1;
-    bottom: 125%;
-    left: -280%;
+    bottom: -520%;
+    left: -260%;
 }
 
 /*!* Popup arrow *!*/
@@ -513,10 +528,19 @@ img {
     justify-content: center;
 }
 
+.send-form{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*/!!!!! правильное расположение/*/
 .send-form_info {
     display: grid;
-position: center;
+    justify-content: center;
+
 }
 
 .send-form_field {
@@ -526,11 +550,7 @@ position: center;
     font-size: 18px;
     font-weight: 400;
     color: #FFFFFF;
-
-}
-
-.send-form{
-
+    border: none;
 }
 
 .send-form_field::placeholder {
@@ -539,12 +559,11 @@ position: center;
     color: #FFFFFF;
 }
 
-.send-form_wrapper{
+.send-form_wrapper {
     margin-bottom: 100px;
 }
 
 .bot-send-mail {
-    position: center;
     width: 200px;
     height: 50px;
     color: #FFFFFF;
@@ -553,7 +572,6 @@ position: center;
     text-transform: uppercase;
     background-color: #E23535;
     padding: 13px 42px;
-    border: 0;
     margin-bottom: 200px;
 }
 
@@ -643,7 +661,8 @@ position: center;
     justify-content: space-around;
     width: 80%;
 }
-.footer_menu{
+
+.footer_menu {
     font-weight: 500;
     font-size: 20px;
     text-transform: uppercase;
@@ -657,7 +676,7 @@ position: center;
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration-line: none;
-    }
+}
 
 .footer_menu-item2 {
     font-weight: 700;
@@ -666,6 +685,7 @@ position: center;
     text-transform: none;
     margin-bottom: 10px;
 }
+
 .footer_menu-item3 {
     font-weight: 500;
     font-size: 12px;
@@ -674,7 +694,7 @@ position: center;
     margin-bottom: 10px;
 }
 
-.footer_menu-link, .footer_menu-link:visited{
+.footer_menu-link, .footer_menu-link:visited {
     color: #FFFFFF;
     text-decoration-line: none;
 
