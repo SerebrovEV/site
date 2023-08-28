@@ -1,7 +1,7 @@
 (function () {
     const header = document.querySelector('.header');
     window.onscroll = () => {
-        if(window.pageYOffset > 50) {
+        if (window.pageYOffset > 50) {
             header.classList.add('header_active');
         } else {
             header.classList.remove('header_active');
@@ -88,15 +88,32 @@
     scrollTo();
 }());
 
+//Burger handler
+
+(function () {
+    const burgerItem = document.querySelector('.burger');
+    const menu = document.querySelector('.header_nav');
+    const menuCloseItem = document.querySelector('.header_nav-close');
+    burgerItem.addEventListener('click', () => {
+        menu.classList.add('header_nav_active');
+    });
+    menuCloseItem.addEventListener('click', () => {
+        menu.classList.remove('header_nav_active');
+    })
+}());
+
+
 // When the user clicks on <div>, open the popup
 function myFunction1() {
     var popup = document.getElementById("myPopup1");
     popup.classList.toggle("show");
 }
+
 function myFunction2() {
     var popup = document.getElementById("myPopup2");
     popup.classList.toggle("show");
 }
+
 function myFunction3() {
     var popup = document.getElementById("myPopup3");
     popup.classList.toggle("show");
