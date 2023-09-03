@@ -206,7 +206,7 @@ img {
 /* Intro styles start*/
 .intro {
     min-height: 100vh;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
     /*padding-top: 150px;*/
 }
 
@@ -251,7 +251,7 @@ img {
     width: 380px;
     height: 50px;
     gap: 10px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 20px;
@@ -788,14 +788,21 @@ img {
         transform: rotate(-45deg);
     }
 
+    .intro {
+        margin-bottom: 50px;
+    }
+
     .intro_title {
         font-weight: 500;
         font-size: 20px;
         line-height: 20px;
         margin-bottom: 20px;
-        margin-left: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
     }
-    .intro_subtitle{
+
+    .intro_subtitle {
         font-size: 15px;
         margin-left: 20px;
     }
@@ -803,49 +810,158 @@ img {
     .intro_submit {
         width: 320px;
         height: 50px;
+        margin-left: 20px;
+        margin-bottom: 50px;
     }
 
-    .about_title{
-        font-size: 24px;
+    .about {
+        margin-bottom: 70px;
     }
-    .about_text{
+
+    .about_subtitle {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about_line {
+        margin-bottom: 10px;
+    }
+
+    .about_subtitle_text {
+        margin-bottom: 10px;
+    }
+
+    .about_pic {
+        display: none;
+    }
+
+    .about_title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .about_text {
         font-size: 14px;
     }
 
     .service_title {
-        font-size: 24px;
+        font-weight: 500;
+        font-size: 20px;
         margin-bottom: 5px;
     }
 
     .service_title2 {
-        font-size: 25px;
+        font-weight: 500;
+        font-size: 20px;
     }
 
     .service_wrapper_info {
         display: block;
     }
 
+    .service_railways {
+        font-weight: 500;
+        font-size: 17px;
+    }
+
+    .service_svyaz {
+        font-weight: 500;
+        font-size: 17px;
+    }
+
+    .service_scb {
+        font-weight: 500;
+        font-size: 17px;
+    }
+
     .service_submit {
         display: none;
     }
-    .contact_title{
-        font-size: 24px;
+
+    .service_wrapper_button {
+        display: none;
     }
-    .contact_question{
-        font-size: 24px;
+
+    .count_title {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 0px;
     }
-    .contact_info_text{
-        font-size: 24px;
+
+    .count_subtitle {
+        font-size: 17px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 20px;
     }
-    .footer_menu-link{
+
+    .send-form_wrapper {
+        margin-bottom: 20px;
+    }
+
+    .bot-send-mail {
+        margin-bottom: 50px;
+        width: 200px;
+        height: 46px;
+    }
+
+    .contact_title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .count_wrapper {
+        margin-bottom: 10px;
+    }
+
+    .contact_question {
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact_info_text {
+        font-size: 20px;
+    }
+
+    .footer_item {
+        width: 150%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .footer_nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .footer_menu-link {
         font-size: 15px;
         width: 100%;
     }
-    .footer_menu-item2{
+
+    .footer_menu:nth-child(2) {
+        margin-left: 0;
+        text-align: left;
+
+    }
+
+    .footer_menu:last-child {
+        text-align: left;
+    }
+
+    .footer_menu-item2 {
         font-size: 15px;
         width: 100%;
     }
-    .footer_logo{
+
+    .footer_logo {
         display: none;
     }
 }
