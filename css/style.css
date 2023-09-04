@@ -91,10 +91,12 @@ table {
 }
 
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 *, *::before, *::after {
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
 
@@ -121,11 +123,15 @@ img {
 
 /* Header styles start*/
 .header {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 28, 63, 1)), to(rgba(0, 44, 100, 1)));
+    background: -o-linear-gradient(rgba(0, 28, 63, 1), rgba(0, 44, 100, 1));
     background: linear-gradient(rgba(0, 28, 63, 1), rgba(0, 44, 100, 1));
     position: fixed; /* закрепление для скрола хеддера*/
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-transition: .2s linear;
+    -o-transition: .2s linear;
     transition: .2s linear;
     /*padding-bottom: 20px;*/
     z-index: 999;
@@ -140,15 +146,25 @@ img {
 }
 
 .header_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; /* расположение контента*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; /*выравнивание по горизонтали*/
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between; /* выравнивание по краям*/
     padding-top: 15px;
 }
 
 .header_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -164,6 +180,7 @@ img {
     font-size: 20px;
     line-height: 23px;
     color: #FFFFFF;
+    -webkit-text-decoration-line: none;
     text-decoration-line: none;
 }
 
@@ -194,6 +211,8 @@ img {
 
 .burger_line_second {
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -211,13 +230,18 @@ img {
 }
 
 .intro_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
 
 }
 
 .intro_text {
     padding-top: 200px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(53.07%, #002C64), color-stop(96.42%, rgba(0, 44, 100, 0)));
+    background: -o-linear-gradient(left, #002C64 53.07%, rgba(0, 44, 100, 0) 96.42%);
     background: linear-gradient(90deg, #002C64 53.07%, rgba(0, 44, 100, 0) 96.42%);
     position: absolute;
 }
@@ -265,6 +289,8 @@ img {
 
 /* About styles start*/
 .about_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -278,11 +304,14 @@ img {
 }
 
 .about_subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-items: center;
 }
 
 .about_pic {
+    display: -ms-grid;
     display: grid;
     margin-bottom: 180px;
     justify-items: right;
@@ -311,6 +340,7 @@ img {
 
 /* Service styles start*/
 .service_title_wrapper {
+    display: -ms-grid;
     display: grid;
     justify-items: center;
     margin-bottom: 20px;
@@ -340,20 +370,43 @@ img {
 }
 
 .service_wrapper_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
 
 }
 
 .service_wrapper_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
 }
 
 .service_wrapper_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-bottom: 300px;
 }
@@ -520,7 +573,10 @@ img {
 }
 
 .count_wrapper {
+    display: -ms-grid;
     display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-top: 15px;
     margin-bottom: 50px;
@@ -536,25 +592,40 @@ img {
 }
 
 .count_subtitle {
+    display: -ms-grid;
     display: grid;
     font-weight: 400;
     font-size: 16px;
     line-height: 50px;
     margin-bottom: 42px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .send-form {
     border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 /*/!!!!! правильное расположение/*/
 .send-form_info {
+    display: -ms-grid;
     display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
 }
@@ -567,6 +638,30 @@ img {
     font-weight: 400;
     color: #FFFFFF;
     border: none;
+}
+
+.send-form_field::-webkit-input-placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.send-form_field::-moz-placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.send-form_field:-ms-input-placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.send-form_field::-ms-input-placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
 }
 
 .send-form_field::placeholder {
@@ -608,13 +703,21 @@ img {
 }
 
 .contact_wrapper_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
 
 .contact_wrapper_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -627,8 +730,15 @@ img {
 }
 
 .contact_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -637,8 +747,15 @@ img {
     font-weight: 500;
     font-size: 32px;
     margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -658,10 +775,14 @@ img {
 
 .footer {
     padding: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 28, 63, 1)), to(rgba(0, 44, 100, 1)));
+    background: -o-linear-gradient(rgba(0, 28, 63, 1), rgba(0, 44, 100, 1));
     background: linear-gradient(rgba(0, 28, 63, 1), rgba(0, 44, 100, 1));
 }
 
 .footer_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -672,8 +793,12 @@ img {
 }
 
 .footer_nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     width: 80%;
 }
@@ -683,6 +808,7 @@ img {
     font-size: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
+    -webkit-text-decoration-line: none;
     text-decoration-line: none;
 }
 
@@ -691,6 +817,7 @@ img {
     font-size: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
+    -webkit-text-decoration-line: none;
     text-decoration-line: none;
 }
 
@@ -712,6 +839,7 @@ img {
 
 .footer_menu-link, .footer_menu-link:visited {
     color: #FFFFFF;
+    -webkit-text-decoration-line: none;
     text-decoration-line: none;
 
 }
@@ -729,6 +857,11 @@ img {
         display: block;
     }
 
+    .header_logo-pic {
+        width: 100px;
+    }
+
+
     .header_nav {
         width: 100%;
         height: 100%;
@@ -738,11 +871,21 @@ img {
         z-index: 10;
         background: rgba(0, 25, 59, 1);
         padding: 75px;
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
         transform: translateX(100%);
+        -webkit-transition: .2s all linear;
+        -o-transition: .2s all linear;
         transition: .2s all linear;
     }
 
+    .header_wrapper {
+        height: 10%;
+    }
+
     .header_nav_active {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
         transform: translateX(0);
     }
 
@@ -757,8 +900,8 @@ img {
     }
 
     .header_link {
-        font-size: 35px;
-        line-height: 48px;
+        font-size: 25px;
+        line-height: 40px;
     }
 
     .header_nav-close {
@@ -781,15 +924,19 @@ img {
     }
 
     .header_nav-close-line:first-child {
+        -webkit-transform: translateY(-50%) rotate(45deg);
+        -ms-transform: translateY(-50%) rotate(45deg);
         transform: translateY(-50%) rotate(45deg);
     }
 
     .header_nav-close-line:last-child {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }
 
     .intro {
-        margin-bottom: 50px;
+        margin-bottom: 150px;
     }
 
     .intro_title {
@@ -805,6 +952,7 @@ img {
     .intro_subtitle {
         font-size: 15px;
         margin-left: 20px;
+        margin-right: 20px;
     }
 
     .intro_submit {
@@ -819,7 +967,10 @@ img {
     }
 
     .about_subtitle {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -863,16 +1014,23 @@ img {
     .service_railways {
         font-weight: 500;
         font-size: 17px;
+        margin-left: 19px;
     }
 
     .service_svyaz {
         font-weight: 500;
         font-size: 17px;
+        margin-left: 19px;
     }
 
     .service_scb {
         font-weight: 500;
         font-size: 17px;
+        margin-left: 19px;
+    }
+
+    .railways {
+        max-width: 90%;
     }
 
     .service_submit {
@@ -888,6 +1046,7 @@ img {
         font-weight: 500;
         text-align: center;
         margin-bottom: 0px;
+        line-height: 25px;
     }
 
     .count_subtitle {
@@ -930,14 +1089,28 @@ img {
 
     .footer_item {
         width: 150%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
         justify-content: left;
     }
 
     .footer_nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
         justify-content: left;
     }
 
