@@ -189,6 +189,10 @@ img {
     /*  opacity: 0.75;*/
 }
 
+.header_line {
+    display: none;
+}
+
 .header_burger {
     display: none;
     width: 40px;
@@ -289,9 +293,10 @@ img {
 /* Intro styles end*/
 
 /* About styles start*/
-.about{
+.about {
     height: 900px;
 }
+
 .about_wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -378,6 +383,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: flex-start;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     -webkit-box-orient: horizontal;
@@ -387,7 +393,7 @@ img {
 
 }
 
-.service_wrapper_section {
+.service_wrapper_section_1_row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -404,6 +410,18 @@ img {
     text-align: left;
 }
 
+.service_wrapper_section_2_row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.railways2 {
+    max-width: 337px;
+    max-height: 252px;
+}
+
 .service_wrapper_button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -413,7 +431,7 @@ img {
     align-items: flex-start;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    margin-bottom: 300px;
+    margin-bottom: 50px;
 }
 
 .service_railways {
@@ -508,6 +526,23 @@ img {
     z-index: 1;
     bottom: -520%;
     left: -260%;
+}
+
+.service_submit .radiotext {
+    text-transform: none;
+    visibility: hidden;
+    font-size: 18px;
+    font-weight: 100;
+    width: 700px;
+    background-color: rgba(0, 25, 59, 1);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: -130%;
+    left: -50%;
 }
 
 /*!* Popup arrow *!*/
@@ -897,7 +932,13 @@ img {
     .header_item {
         width: 100%;
         margin-right: 0;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
+    }
+
+    .header_line {
+        display: flex;
+        width: 250px;
+        margin-bottom: 10px;
     }
 
     .header_item:last-child {
@@ -905,7 +946,7 @@ img {
     }
 
     .header_link {
-        font-size: 25px;
+        font-size: 20px;
         line-height: 40px;
     }
 
@@ -968,7 +1009,8 @@ img {
     }
 
     .about {
-        margin-bottom: 70px;
+        height: 500px;
+        margin-bottom: 220px;
     }
 
     .about_subtitle {
@@ -998,7 +1040,7 @@ img {
     }
 
     .about_text {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .service_title {
@@ -1101,8 +1143,8 @@ img {
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row;
-        -webkit-box-pack: left;
-        -ms-flex-pack: left;
+        /*-webkit-box-pack: left;*/
+        /*-ms-flex-pack: left;*/
         justify-content: left;
     }
 
@@ -1114,8 +1156,8 @@ img {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-box-pack: left;
-        -ms-flex-pack: left;
+        /*-webkit-box-pack: left;*/
+        /*-ms-flex-pack: left;*/
         justify-content: left;
     }
 

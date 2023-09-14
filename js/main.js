@@ -101,9 +101,9 @@
     menuCloseItem.addEventListener('click', () => {
         menu.classList.remove('header_nav_active');
     });
-    if (window.innerWidth < 501){
+    if (window.innerWidth < 501) {
         for (let i = 0; i < menuLinks.length; i += 1) {
-            menuLinks[i].addEventListener('click', ()=> {
+            menuLinks[i].addEventListener('click', () => {
                 menu.classList.remove('header_nav_active');
             });
         }
@@ -124,5 +124,10 @@ function myFunction2() {
 
 function myFunction3() {
     var popup = document.getElementById("myPopup3");
+    popup.classList.toggle("show");
+}
+
+function myFunction4() {
+    var popup = document.getElementById("myPopup4");
     popup.classList.toggle("show");
 }
