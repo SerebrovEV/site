@@ -222,6 +222,7 @@ img {
 
 /* Header styles end*/
 
+
 /* Intro styles start*/
 .intro {
     min-height: 100vh;
@@ -288,6 +289,9 @@ img {
 /* Intro styles end*/
 
 /* About styles start*/
+.about{
+    height: 900px;
+}
 .about_wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -308,6 +312,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     justify-items: center;
+    margin-bottom: 40px;
 }
 
 .about_pic {
