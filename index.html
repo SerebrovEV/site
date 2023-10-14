@@ -25,21 +25,26 @@
             </div>
             <nav class="header_nav">
                 <ul class="header_list">
+                    <hr class="header_line">
                     <li class="header_item">
                         <a href="#main" class="header_link js-scroll">ГЛАВНАЯ</a>
                     </li>
+                    <hr class="header_line">
                     <li class="header_item">
                         <a href="#about" class="header_link js-scroll">О КОМПАНИИ</a>
                     </li>
+                    <hr class="header_line">
                     <li class="header_item">
                         <a href="#service" class="header_link js-scroll">ДЕЯТЕЛЬНОСТЬ</a>
                     </li>
+                    <hr class="header_line">
                     <!--                    <li class="header_item">-->
                     <!--                        <a href="#project" class="header_link js-scroll">ПРОЕКТЫ</a>-->
                     <!--                    </li>-->
                     <li class="header_item">
                         <a href="#contact" class="header_link js-scroll">КОНТАКТЫ</a>
                     </li>
+                    <hr class="header_line">
                 </ul>
                 <div class="header_nav-close">
                     <span class="header_nav-close-line"></span>
@@ -143,7 +148,7 @@
             </div>
             <img src="./img/svg/Vector%205.svg" alt="" class="service_line">
             <div class="service_wrapper_info">
-                <div class="service_wrapper_section">
+                <div class="service_wrapper_section_1_row">
                     <img src="img/svg/railways.svg" alt="" class="railways">
                     <h3 class="service_railways">
                         ПРОЕКТИРОВАНИЕ ПУТЕВОЙ ЧАСТИ для железнодорожных станций,
@@ -151,18 +156,19 @@
                         и необщего пользования
                     </h3>
                 </div>
-                <div class="service_wrapper_section">
-                    <img src="img/svg/svyaz.svg" alt="" class="railways">
+                <div class="service_wrapper_section_1_row">
+                    <img src="img/svg/svyaz2.png" alt="" class="railways2">
                     <h3 class="service_svyaz">
                         Проектирование сетей железнодорожной связи
                     </h3>
                 </div>
-                <div class="service_wrapper_section">
+                <div class="service_wrapper_section_1_row">
                     <img src="img/svg/scb.svg" alt="" class="railways">
                     <h3 class="service_scb">
                         Проектирование Устройств Сигнализации, Централизации И Блокировки (СЦБ)
                     </h3>
                 </div>
+
             </div>
             <div class="service_wrapper_button">
                 <button type="submit" class="service_submit" onclick="myFunction1()">
@@ -288,6 +294,22 @@
                 </button>
             </div>
         </div>
+        <div class="service_wrapper_section_2_row">
+            <img src="img/svg/svyaz.svg" alt="" class="railways2">
+            <h3 class="service_railways">
+                ВЫПОЛНЕНИЕ РАСЧЕТОВ РАДИОСВЯЗИ <p> и сопровождение получения разрешений на использование радиочастот
+            </h3>
+            <div class="service_wrapper_button">
+                <button type="submit" class="service_submit" onclick="myFunction4()">
+                    Подробнее
+                    <span class="radiotext" id="myPopup4">
+                                           Подготовка документации для подачи на экспертизу в ФГУП «ГРЧЦ» о возможности
+                        использования проектируемых РЭС и <br> дальнейшего получения решения Государственной комиссии по радиочастотам
+                        (ГКРЧ), в соответствии с Решением ГРЧЦ <br> от 7 ноября 2016 г. № 16-39-01
+                                        </span>
+                </button>
+            </div>
+        </div>
     </section>
 
     <!--    Service end-->
@@ -327,7 +349,7 @@
             <form class="send-form" autocomplete="off" action='scripts/email.php' method="post">
                 <fieldset class="send-form_wrapper">
                     <p class="send-form_info">
-                        <input type="text" name="name" class="send-form_field" placeholder="Ваше имя">
+                        <input type="text" name="name" class="send-form_field" placeholder="Название компании">
                         <img src="./img/svg/Vector%201.svg" alt="" class="service_line">
                         <input type="text" name="phone" class="send-form_field" placeholder="Телефон">
                         <img src="./img/svg/Vector%201.svg" alt="" class="service_line">
@@ -409,9 +431,9 @@
                     <li class="footer_menu-item">
                         <a href="#count" class="footer_menu-link js-scroll">Расчёт</a>
                     </li>
-<!--                    <li class="footer_menu-item">-->
-<!--                        <a href="#!" class="footer_menu-link">проекты</a>-->
-<!--                    </li>-->
+                    <!--                    <li class="footer_menu-item">-->
+                    <!--                        <a href="#!" class="footer_menu-link">проекты</a>-->
+                    <!--                    </li>-->
                     <li class="footer_menu-item">
                         <a href="#contact" class="footer_menu-link js-scroll">контакты</a>
                     </li>
