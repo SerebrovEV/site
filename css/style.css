@@ -170,6 +170,7 @@ img {
 
 .header_item {
     margin-right: 57px;
+    text-transform: uppercase;
 }
 
 .header_item:last-child {
@@ -230,7 +231,7 @@ img {
 /* Intro styles start*/
 .intro {
     min-height: 100vh;
-    margin-bottom: 150px;
+    margin-bottom: 170px;
     /*padding-top: 150px;*/
 }
 
@@ -295,6 +296,7 @@ img {
 /* About styles start*/
 .about {
     height: 900px;
+    margin-bottom: 170px;
 }
 
 .about_wrapper {
@@ -309,7 +311,6 @@ img {
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 150px;
-
 }
 
 .about_subtitle {
@@ -327,7 +328,6 @@ img {
     justify-items: right;
     margin-right: 40px;
     margin-left: 10px;
-
 }
 
 .about_pic:last-child {
@@ -348,6 +348,42 @@ img {
 
 /* About styles end*/
 
+/* Stage styles start*/
+
+.stages {
+    margin-bottom: 200px;
+}
+
+.stages-title {
+    color: #00A5FE;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.stages-text {
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 100px;
+    /*line-height: 20px;*/
+}
+
+.stages-text-subtitle {
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 30px;
+}
+
+li {
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+
+/* Stage styles end*/
+
 /* Service styles start*/
 .service_title_wrapper {
     display: -ms-grid;
@@ -363,7 +399,6 @@ img {
     margin-bottom: 40px;
     max-width: 878px;
     text-align: center;
-
 }
 
 .service_title2 {
@@ -1043,6 +1078,33 @@ img {
         font-size: 17px;
     }
 
+    .stages_title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .stages-text {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .stages-text-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .stages-text-list{
+        font-size: 17px;
+        font-weight: 300;
+        /*padding-bottom: 5px;*/
+        line-height: 2px;
+    }
+
+    li{
+        padding-bottom: 0;
+    }
     .service_title {
         font-weight: 500;
         font-size: 20px;
