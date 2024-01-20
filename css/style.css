@@ -252,24 +252,34 @@ img {
 .intro_text {
     padding-top: 200px;
     background: -webkit-gradient(linear, left top, right top, color-stop(53.07%, #020736), color-stop(96.42%, rgba(0, 44, 100, 0)));
-    background: -o-linear-gradient(left, #020736 53.07%, rgba(0, 44, 100, 0) 96.42%);
-    background: linear-gradient(90deg, #020736 53.07%, rgba(0, 44, 100, 0) 96.42%);
+    background: -o-linear-gradient(left, #020736 80.07%, rgba(0, 44, 100, 0) 96.42%);
+    background:linear-gradient(100deg, #020736 80.07%, rgba(0, 44, 100, 0) 110.42%);
     position: absolute;
 }
 
 
 .intro_pic {
     position: revert;
-
+min-height: 1000px;
 }
 
 .intro_title {
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 50px;
+    max-width: 600px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+.intro_title_2 {
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 27px;
     line-height: 50px;
-    max-width: 645px;
-    margin-bottom: 42px;
+    max-width: 600px;
+    margin-bottom: 10px;
+    text-align: center;
 
 }
 
@@ -277,8 +287,9 @@ img {
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
-    max-width: 470px;
-    margin-bottom: 70px;
+    max-width: 600px;
+    margin-bottom: 30px;
+    text-align: justify;
 }
 
 .intro_submit {
@@ -290,6 +301,7 @@ img {
     color: #e8d7c8;
     font-weight: 500;
     font-size: 20px;
+margin-left: 100px;
 }
 
 .intro_submit:hover, intro_submit:focus, intro_submit:active {
@@ -404,6 +416,13 @@ h4 {
     font-size: 20px;
     font-weight: 300;
     font-style: oblique;
+}
+h5{
+    font-size: 17px;
+    font-weight: 300;
+    font-style: oblique;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 .info {
@@ -798,137 +817,6 @@ h4 {
     background: #610202;
 }
 
-/* The actual popup (appears on top) */
-.service_submit .zdtext {
-    text-transform: none;
-    visibility: hidden;
-    font-size: 18px;
-    font-weight: 100;
-    width: 1300px;
-    background-color: rgba(0, 25, 59, 1);
-    color: #e8d7c8;
-    text-align: justify;
-    border-radius: 6px;
-    padding: 10px 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: -250%;
-    left: -20%;
-}
-
-.service_submit .svyaztext {
-    text-transform: none;
-    visibility: hidden;
-    font-size: 18px;
-    font-weight: 100;
-    width: 1300px;
-    background-color: rgba(0, 25, 59, 1);
-    color: #e8d7c8;
-    text-align: justify;
-    border-radius: 6px;
-    padding: 10px 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: -3250%;
-    left: -140%;
-}
-
-.service_submit .scbztext {
-    text-transform: none;
-    visibility: hidden;
-    font-size: 18px;
-    font-weight: 100;
-    width: 1300px;
-    background-color: rgba(0, 25, 59, 1);
-    color: #e8d7c8;
-    text-align: justify;
-    border-radius: 6px;
-    padding: 10px 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: -520%;
-    left: -260%;
-}
-
-.service_submit .radiotext {
-    text-transform: none;
-    visibility: hidden;
-    font-size: 18px;
-    font-weight: 100;
-    width: 700px;
-    background-color: rgba(0, 25, 59, 1);
-    color: #e8d7c8;
-    text-align: justify;
-    border-radius: 6px;
-    padding: 10px 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: -130%;
-    left: -50%;
-}
-
-.service_submit .gp_text {
-    text-transform: none;
-    text-align: justify;
-    visibility: hidden;
-    font-size: 18px;
-    font-weight: 100;
-    width: 700px;
-    background-color: rgba(0, 25, 59, 1);
-    color: #e8d7c8;
-    border-radius: 6px;
-    padding: 10px 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: -130%;
-    left: -10%;
-}
-
-.service_submit .ad_text {
-    text-transform: none;
-    visibility: hidden;
-    font-size: 18px;
-    font-weight: 100;
-    width: 700px;
-    background-color: rgba(0, 25, 59, 1);
-    color: #e8d7c8;
-    text-align: justify;
-    border-radius: 6px;
-    padding: 10px 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: -80%;
-    left: -100%;
-}
-
-.service_submit .electrictext {
-    text-transform: none;
-    visibility: hidden;
-    font-size: 18px;
-    font-weight: 100;
-    width: 700px;
-    background-color: rgba(0, 25, 59, 1);
-    color: #e8d7c8;
-    text-align: justify;
-    border-radius: 6px;
-    padding: 10px 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: -130%;
-    left: -50%;
-}
-
-/*!* Popup arrow *!*/
-/*.service_submit .svyaztext::after {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    top: 100%;*/
-/*    left: 50%;*/
-/*    margin-left: -5px;*/
-/*    border-width: 5px;*/
-/*    border-style: solid;*/
-/*    border-color: #555 transparent transparent transparent;*/
-/*}*/
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .service_submit .show {
@@ -1084,6 +972,11 @@ h4 {
 }
 
 .send-form_wrapper {
+    margin-bottom: 20px;
+}
+
+.count h4{
+    font-size: 15px;
     margin-bottom: 20px;
 }
 .g-recaptcha{
