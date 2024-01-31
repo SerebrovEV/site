@@ -264,7 +264,7 @@ img {
 
 
 .website-text {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 50px;
     margin-left: 10px;
     margin-right: 10px;
@@ -276,7 +276,7 @@ img {
 
 .image-website {
     max-width: 300px;
-    max-height: 420px;
+    max-height: 540px;
 }
 
 
@@ -421,6 +421,9 @@ img {
 /* Count styles end*/
 
 /* Footer styles start */
+.footer_mobile{
+    display: none;
+}
 
 .footer {
     padding: 100px;
@@ -668,8 +671,18 @@ img {
         font-size: 20px;
     }
 
+
+    .footer {
+        display: none;
+    }
+
+    .footer_mobile {
+        display: block;
+        padding: 20px;
+    }
+
     .footer_item {
-        width: 150%;
+        width: 120%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -680,20 +693,21 @@ img {
         /*-webkit-box-pack: left;*/
         /*-ms-flex-pack: left;*/
         justify-content: left;
+        margin-bottom: 10px;
     }
 
-    .footer_nav {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        /*-webkit-box-pack: left;*/
-        /*-ms-flex-pack: left;*/
-        justify-content: left;
-    }
+    /*.footer_nav {*/
+    /*    display: -webkit-box;*/
+    /*    display: -ms-flexbox;*/
+    /*    display: flex;*/
+    /*    -webkit-box-orient: vertical;*/
+    /*    -webkit-box-direction: normal;*/
+    /*    -ms-flex-direction: column;*/
+    /*    flex-direction: column;*/
+    /*    !*-webkit-box-pack: left;*!*/
+    /*    !*-ms-flex-pack: left;*!*/
+    /*    justify-content: left;*/
+    /*}*/
 
     .footer_menu-link {
         font-size: 15px;
