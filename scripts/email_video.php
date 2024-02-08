@@ -1,9 +1,7 @@
 <?php
-
 $secret = '6LfV0UgpAAAAAG3j0VbFFo_dpz_eMV-Rcu9hCRH4';
 //$secret = '6Ld71EgpAAAAAPc3savQnWNcHJuNJ6SqSKDTm8X1'; основной сайт
-//$to = "proekt@etppro.ru";//Почтовый ящик на который будет отправлено сообщение
-$to = "evgeniy.smirnov@list.ru";//Почтовый ящик на который будет отправлено сообщение
+$to = "proekt@etppro.ru";//Почтовый ящик на который будет отправлено сообщение
 $subject = "Тема сообщения";//Тема сообщения
 $message = "Message, сообщение!";//Сообщение, письмо
 $headers = "Content-type: text/plain; charset=utf-8 \r\n";
@@ -26,8 +24,8 @@ if (!empty($_POST['g-recaptcha-response'])) {
 if ($error) {
     echo "Ошибка заполнения капчи. Перейти на сайт <a href='https://etp-pro.ru/'>ЭкспертТрансПроект</a>, если вас не перенаправило вручную.";
 
-}else{
-    // Проверяем или метод запроса POST
+}else {
+// Проверяем или метод запроса POST
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Поочередно проверяем или были переданные параметры формы, или они не пустые
         if (isset($_POST['name']) && $_POST['name'] != "") {
@@ -43,12 +41,8 @@ if ($error) {
             $mail = trim(strip_tags($_POST['mail']));
         }
 
-        if (isset($_POST['type'])) {
-            $type = trim(strip_tags($_POST['type']));
-        }
-
         if (isset($_POST['description'])) {
-            $description = trim(strip_tags($_POST['description']));
+            $question = trim(strip_tags($_POST['description']));
         }
 
         // Формируем письмо
@@ -59,9 +53,9 @@ if ($error) {
         $message .= "\n";
         $message .= "Почта: " . $mail;
         $message .= "\n";
-        $message .= "Тип работ: " . $type;
-        $message .= "\n";
-        $message .= "Подробнее: " . $description;
+        $message .= "Тип работ: Транспортная безопасность";
+        $message .= "<\n>";
+        $message .= "Подробнее: " . $question;
         // Окончание формирования тела письма
 
         // Посылаем письмо
@@ -79,5 +73,4 @@ if ($error) {
         exit;
     }
 }
-
 ?>
