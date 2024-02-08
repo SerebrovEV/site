@@ -279,6 +279,58 @@ img {
     max-height: 540px;
 }
 
+.text_switch {
+    display: none;
+}
+
+.text_body {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.text_switch:checked ~ .text_body {
+    max-height: 100%;
+    margin-bottom: 10px;
+
+}
+
+.text_switch:checked ~ .text_headline {
+    color: #E23535;
+}
+
+.text_headline::before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 4px;
+    border: 6px solid white;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+
+.text_switch:checked ~ .text_headline::before {
+    transform: rotate(180deg) translateY(6px);
+}
+
+.text_headline {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    user-select: none;
+    color: #e8d7c8;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+
+}
+
+.text_headline:hover {
+    text-decoration: underline;
+    color: #E23535;
+}
+
 
 /* Count styles start*/
 .count {
