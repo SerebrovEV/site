@@ -174,7 +174,7 @@ img {
 }
 
 .header_item {
-    margin-right: 57px;
+    margin-right: 20px;
     text-transform: uppercase;
 }
 
@@ -353,9 +353,6 @@ img {
     margin-left: 10px;
 }
 
-/*.about_pic:last-child {*/
-/*    margin-bottom: 300px;*/
-/*}*/
 
 .about_text {
     font-size: 25px;
@@ -367,6 +364,68 @@ img {
 }
 
 /* About styles end*/
+
+/* Principles styles start*/
+.principle {
+    height: 900px;
+    margin-bottom: 50px;
+}
+
+.wrapper-stage-title {
+    scroll-margin-top: 170px;
+}
+
+.principle_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    scroll-margin-top: 170px;
+}
+
+.principle_title {
+    color: #00A5FE;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 100px;
+}
+
+.principle-text-subtitle {
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+}
+
+.principle_subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.principle_pic {
+    display: -ms-grid;
+    display: grid;
+    margin-bottom: 130px;
+    justify-items: right;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+
+.principle_text {
+    font-size: 25px;
+}
+
+.principle_subtitle_text,
+.principle_line {
+    margin-bottom: 50px;
+}
+
+/* Principles styles end*/
 
 /* Stage styles start*/
 
@@ -1025,7 +1084,7 @@ h5 {
 
 /*Contact style start*/
 
-.contact{
+.contact {
     margin-bottom: 100px;
 }
 
@@ -1109,9 +1168,10 @@ h5 {
 
 /* Footer styles start */
 
-.footer_mobile{
+.footer_mobile {
     display: none;
 }
+
 .footer {
     padding: 100px;
     background: -webkit-gradient(linear, left top, left bottom, from(#020736), to(rgba(0, 44, 100, 1)));
@@ -1120,6 +1180,7 @@ h5 {
 }
 
 .footer_item {
+    color: #e8d7c8;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1170,14 +1231,15 @@ h5 {
 
 .footer_menu-item3 {
     font-weight: 500;
-    font-size: 12px;
-    color: #FFFFFF;
+    font-size: 13px;
+    color: #e8d7c8;
     text-transform: none;
     margin-bottom: 5px;
+    line-height:15px;
 }
 
 .footer_menu-link, .footer_menu-link:visited {
-    color: #FFFFFF;
+    color: #e8d7c8;
     -webkit-text-decoration-line: none;
     text-decoration-line: none;
 
@@ -1244,7 +1306,7 @@ h5 {
 
     .header_line {
         display: flex;
-        width: 250px;
+        width: 300px;
         margin-bottom: 10px;
     }
 
@@ -1360,6 +1422,50 @@ h5 {
     }
 
     .about_text {
+        font-size: 17px;
+    }
+
+    .principle {
+        height: 500px;
+        margin-bottom: 100px;
+    }
+
+    .principle-text-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    .principle_subtitle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .principle_line {
+        margin-bottom: 10px;
+    }
+
+    .principle_subtitle_text {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .principle_pic {
+        display: none;
+    }
+
+    .principle_title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .principle_text {
         font-size: 17px;
     }
 
@@ -1559,7 +1665,7 @@ h5 {
     }
 
     .footer {
-    display: none;
+        display: none;
     }
 
     .footer_mobile {
@@ -1569,6 +1675,7 @@ h5 {
 
     .footer_item {
         width: 120%;
+        color: #e8d7c8;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1582,18 +1689,6 @@ h5 {
         margin-bottom: 10px;
     }
 
-    /*.footer_nav {*/
-    /*    display: -webkit-box;*/
-    /*    display: -ms-flexbox;*/
-    /*    display: flex;*/
-    /*    -webkit-box-orient: vertical;*/
-    /*    -webkit-box-direction: normal;*/
-    /*    -ms-flex-direction: column;*/
-    /*    flex-direction: column;*/
-    /*    !*-webkit-box-pack: left;*!*/
-    /*    !*-ms-flex-pack: left;*!*/
-    /*    justify-content: left;*/
-    /*}*/
     .footer_menu-link {
         font-size: 15px;
         width: 100%;
@@ -1610,8 +1705,11 @@ h5 {
     }
 
     .footer_menu-item2 {
-        font-size: 15px;
+        font-size: 14px;
         width: 100%;
+        color: #e8d7c8;
+        text-align: center;
+        line-height:15px;
     }
 
     .footer_logo {

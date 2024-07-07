@@ -173,7 +173,7 @@ img {
 }
 
 .header_item {
-    margin-right: 57px;
+    margin-right: 20px;
     text-transform: uppercase;
 }
 
@@ -277,6 +277,25 @@ img {
 .image-website {
     max-width: 300px;
     max-height: 540px;
+}
+
+.wrapper-reputation{
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+.image-reputation{
+    margin-top: 20px;
+    max-width: 300px;
+    max-height: 540px;
+    text-align: center;
+
+}
+.image-reputation:hover{
+    transition: 1s;
+    transform: scale(2);
+    z-index: 20;
 }
 
 .text_switch {
@@ -535,14 +554,15 @@ img {
 
 .footer_menu-item3 {
     font-weight: 500;
-    font-size: 12px;
-    color: #FFFFFF;
+    font-size: 13px;
+    color: #e8d7c8;
     text-transform: none;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    line-height:15px;
 }
 
 .footer_menu-link, .footer_menu-link:visited {
-    color: #FFFFFF;
+    color: #e8d7c8;
     -webkit-text-decoration-line: none;
     text-decoration-line: none;
 
@@ -657,6 +677,10 @@ img {
         padding-right: 5%;
         justify-content: center;
     }
+    .image-reputation:hover {
+        transition: 1s;
+        transform: scale(1.2);
+    }
 
     .image-website {
         margin-bottom: 20px;
@@ -735,6 +759,7 @@ img {
 
     .footer_item {
         width: 120%;
+        color: #e8d7c8;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -742,24 +767,10 @@ img {
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row;
-        /*-webkit-box-pack: left;*/
-        /*-ms-flex-pack: left;*/
         justify-content: left;
         margin-bottom: 10px;
     }
 
-    /*.footer_nav {*/
-    /*    display: -webkit-box;*/
-    /*    display: -ms-flexbox;*/
-    /*    display: flex;*/
-    /*    -webkit-box-orient: vertical;*/
-    /*    -webkit-box-direction: normal;*/
-    /*    -ms-flex-direction: column;*/
-    /*    flex-direction: column;*/
-    /*    !*-webkit-box-pack: left;*!*/
-    /*    !*-ms-flex-pack: left;*!*/
-    /*    justify-content: left;*/
-    /*}*/
 
     .footer_menu-link {
         font-size: 15px;
@@ -777,8 +788,11 @@ img {
     }
 
     .footer_menu-item2 {
-        font-size: 15px;
+        font-size: 14px;
         width: 100%;
+        color: #e8d7c8;
+        text-align: center;
+        line-height:15px;
     }
 
     .footer_logo {
