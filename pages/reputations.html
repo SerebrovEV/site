@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Лицензии и сертификаты</title>
     <link rel="stylesheet" href="../css/style2.css">
-    <link rel="shortcut icon" href="../img/svg/logo2.png">
+    <!--   <link rel="shortcut icon" href="../img/svg/logo2.png">-->
 </head>
 <body>
 
@@ -19,9 +19,7 @@
         <div class="header_wrapper">
             <div class="header_logo">
                 <a href="" class="header_logo_link">
-                    <img src="../img/svg/logo2.png"
-                         alt="Комплексные проектные работы для железнодорожной инфраструктуры"
-                         class="header_logo-pic">
+                    <!--   <img src="../img/svg/logo2.png"                         alt="Комплексные проектные работы для железнодорожной инфраструктуры"                         class="header_logo-pic">-->
                 </a>
             </div>
             <nav class="header_nav">
@@ -125,8 +123,7 @@
     <div class="wrapper">
         <div class="footer_item">
             <div class="footer_logo">
-                <img src="../img/svg/logo2.png" alt="Комплексные проектные работы для железнодорожной инфраструктуры"
-                     class="footer_logo-pic">
+                <!-- <img src="../img/svg/logo2.png" alt="Комплексные проектные работы для железнодорожной инфраструктуры"                     class="footer_logo-pic">-->
             </div>
             <nav class="footer_nav">
                 <ul class="footer_menu">
@@ -162,8 +159,12 @@
                     </li>
                     <li class="footer_menu-item3">
                         <img src="../img/svg/c.svg" alt="" class="c-img">
-                        2023 ЭкспертТрансПроект
+                        2023-<span id="current-year1"></span> ЭкспертТрансПроект
                     </li>
+                    <script>
+                        const currentYear1 = new Date().getFullYear();
+                        document.getElementById('current-year1').textContent = currentYear1;
+                    </script>
                 </ul>
                 <ul class="footer_menu">
                     <li class="footer_menu-item3">
@@ -185,8 +186,7 @@
     <div class="wrapper">
         <div class="footer_item">
             <div class="footer_logo">
-                <img src="../img/svg/logo2.png" alt="Комплексные проектные работы для железнодорожной инфраструктуры"
-                     class="footer_logo-pic">
+                <!--   <img src="../img/svg/logo2.png" alt="Комплексные проектные работы для железнодорожной инфраструктуры"                     class="footer_logo-pic">-->
             </div>
             <nav class="footer_nav">
                 <ul class="footer_menu">
@@ -226,8 +226,12 @@
                     </li>
                     <li class="footer_menu-item2">
                         <img src="../img/svg/c.svg" alt="" class="c-img">
-                        2023 ЭкспертТрансПроект
+                        2023-<span id="current-year"></span> ЭкспертТрансПроект
                     </li>
+                    <script>
+                        const currentYear = new Date().getFullYear();
+                        document.getElementById('current-year').textContent = currentYear;
+                    </script>
                     <li class="footer_menu-item2">
                         ООО "ЭТП"
                     </li>

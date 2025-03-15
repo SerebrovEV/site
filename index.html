@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ООО "ЭкспертТрансПроект"</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./img/svg/logo2.png">
+    <!--     <link rel="shortcut icon" href="./img/svg/logo2.png">-->
 </head>
 <body>
 
@@ -18,9 +18,11 @@
 
         <div class="header_wrapper">
             <div class="header_logo">
-                <a href="" class="header_logo_link">
-                    <img src="./img/svg/logo2.png" alt="Комплексные проектные работы для железнодорожной инфраструктуры"
-                         class="header_logo-pic">
+                <!--     <a href="" class="header_logo_link"> -->
+                <!--    <img src="./img/svg/logo2.png" alt="Комплексные проектные работы для железнодорожной инфраструктуры"   class="header_logo-pic"> -->
+                <!--   </a> -->
+                <a href="https://spark-interfax.ru/leningradskaya-oblast-luzhski-raion/ooo-etp-inn-4705102150-ogrn-1234700011743-fb9f895ccace7ac4e053259aa8c0f4f3" target="_blank">
+                    <img src="//spark-register.ru/images/signs/member-sign-2.svg" style="border: none" />
                 </a>
             </div>
             <nav class="header_nav">
@@ -139,8 +141,7 @@
                     </p>
                     <img src="./img/svg/Vector%205.svg" alt="" class="about_line">
                     <p class="about_subtitle_text">
-                        Специалисты, чьи компетентность и опыт подтверждены профильными дипломами и сертификатами
-                        периодичных профессиональных курсов выполняют работы любой сложности.
+                        Специалисты, с многолетним опытом проектирования выполняют работы любой сложности, при условии соблюдения принципов Компании.
                     </p>
                 </div>
             </div>
@@ -673,8 +674,8 @@
                     </p>
                 </fieldset>
                 <h4>* - обязательные поля для заполнения формы.</h4>
-<!--                <div class="g-recaptcha" data-sitekey="6LfV0UgpAAAAAEpnMbhUMX6ygs9WAeasmtHPNs-j"                     data-theme="dark"></div>-->
-                                <div class="g-recaptcha" data-sitekey="6Ld71EgpAAAAALssdSdColnnzy5bwkK86km132aa" data-theme="dark"></div>
+                <!--                <div class="g-recaptcha" data-sitekey="6LfV0UgpAAAAAEpnMbhUMX6ygs9WAeasmtHPNs-j"                     data-theme="dark"></div>-->
+                <div class="g-recaptcha" data-sitekey="6Ld71EgpAAAAALssdSdColnnzy5bwkK86km132aa" data-theme="dark"></div>
                 <!--                основной сайт-->
                 <input class="bot-send-mail" type='submit' value='Отправить'>
             </form>
@@ -726,8 +727,7 @@
     <div class="wrapper">
         <div class="footer_item">
             <div class="footer_logo">
-                <img src="./img/svg/logo2.png" alt="Комплексные проектные работы для железнодорожной инфраструктуры"
-                     class="footer_logo-pic">
+                <!--       <img src="./img/svg/logo2.png" alt="Комплексные проектные работы для железнодорожной инфраструктуры"                     class="footer_logo-pic">-->
             </div>
             <nav class="footer_nav">
                 <ul class="footer_menu">
@@ -763,8 +763,12 @@
                     </li>
                     <li class="footer_menu-item3">
                         <img src="./img/svg/c.svg" alt="" class="c-img">
-                        2023 ЭкспертТрансПроект
+                        2023-<span id="current-year1"></span> ЭкспертТрансПроект
                     </li>
+                    <script>
+                        const currentYear1 = new Date().getFullYear();
+                        document.getElementById('current-year1').textContent = currentYear1;
+                    </script>
                 </ul>
                 <ul class="footer_menu">
                     <li class="footer_menu-item3">
@@ -827,8 +831,12 @@
                     </li>
                     <li class="footer_menu-item2">
                         <img src="./img/svg/c.svg" alt="" class="c-img">
-                        2023 ЭкспертТрансПроект
+                        2023-<span id="current-year"></span> ЭкспертТрансПроект
                     </li>
+                    <script>
+                        const currentYear = new Date().getFullYear();
+                        document.getElementById('current-year').textContent = currentYear;
+                    </script>
                     <li class="footer_menu-item2">
                         ООО "ЭТП"
                     </li>
